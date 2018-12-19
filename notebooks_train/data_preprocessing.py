@@ -1,4 +1,7 @@
 import nltk
+import string
+import numpy
+from nltk.stem.snowball import SnowballStemmer
 from collections import OrderedDict
 
 
@@ -26,12 +29,20 @@ def remove_stop_words(text_list):
     return filtered_text_list
 
 
+remove_punct_dict = dict((ord(punct), None)
+                         for punct in string.punctuation)
+
+
+def StemNormalize(text):
+    return nltk.word_tokenize(text.lower().translate(remove_punct_dict))
+
+
 def stemmering(text_list):
-    stemmer = nltk.stem.RSLPStemmer()
+    stemmer = SnowballStemmer("portuguese")
     stemmered_text_list = []
 
-    for l in text_list:
-        stemmered_sentence = [stemmer.stem(item) for item in l]
+    for text in text_list:
+        stemmered_sentence = [stemmer.stem(item) for item in text]
         stemmered_text_list.append(stemmered_sentence)
 
     return stemmered_text_list
@@ -40,12 +51,14 @@ def stemmering(text_list):
 def main():
     corpus = load_data()
     ordered_corpus = OrderedDict(sorted(corpus.items(), key=lambda t: t[0]))
+    print(ordered_corpus)
+    print(type(ordered_corpus))
     text_list = [y.lower().split() for x, y in ordered_corpus.items()]
 
     new_text_list = remove_stop_words(text_list)
-    print(text_list)
-    print('############')
-    print(new_text_list)
+    # print(text_list)
+    # print('############')
+    # print(new_text_list)
     stemmered_text_list = stemmering(new_text_list)
     print(stemmered_text_list)
 

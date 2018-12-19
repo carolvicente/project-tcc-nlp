@@ -41,6 +41,7 @@ def routine_search(requests_per_persona, lst_persona, twitter, search_qty):
 
 def search_tweet(persona):
     query = persona.twitter_query
+    print(query)
     res = twitter.search(q=query, count='5',
                          lang='pt', tweet_mode='extended', since_id=persona.since_id)
 
@@ -51,22 +52,22 @@ def search_tweet(persona):
     #                      lang='pt',
     #                      tweet_mode='extended')
 
-    print(res)
-    print('#########=======#########')
-    for result in res:
-        print(result)
-        text = ''
-        if 'retweeted_status' in dir(result):
-            text = result.retweeted_status.full_text
-            print('#### Text :', text)
-        else:
-            try:
-                text = result.full_text
-                print('#### FULL TEXT :', text)
-            except Exception:
-                print('JSON Malformado.')
-        if len(text) > 0:
-            tweets_persona.append({'persona': persona.name, 'tweet': text})
+    # print(res)
+    # print('#########=======#########')
+    # for result in res:
+    #     print(result)
+    #     text = ''
+    #     if 'retweeted_status' in dir(result):
+    #         text = result.retweeted_status.full_text
+    #         print('#### Text :', text)
+    #     else:
+    #         try:
+    #             text = result.full_text
+    #             print('#### FULL TEXT :', text)
+    #         except Exception:
+    #             print('JSON Malformado.')
+    #     if len(text) > 0:
+    #         tweets_persona.append({'persona': persona.name, 'tweet': text})
 
 # max_id = res['search_metadata']['max_id']
 # since_id = res['search_metadata']['since_id']

@@ -1,9 +1,7 @@
 Name,Party_name,popular_names,file,twitter_query,twitter_max_id,twitter_since_id
-Jair Bolsonaro,PSL,Bolsonaro|Jair Bolsonaro,jair_bolsonaro.csv,bolsonaro or jair bolsonaro,0,1044325041448644608
+Jair Bolsonaro,PSL,Bolsonaro|Jair Bolsonaro,jair_bolsonaro.csv,bolsonaro or jair bolsonaro,0,1069341501367422977
 Marina Silva,Rede,Marina Silva|Marina,marina_silva.csv,marina or marina silva,0,1044325046561296384
 Ciro Gomes,PDT,Ciro Gomes|Ciro,ciro_gomes.csv,ciro or ciro gomes,0,1044325050604810241
 Geraldo Alckmin,PSDB,Geraldo Alckmin|Alckmin,geraldo_alckmin.csv,geraldo alckmin or alckmin,0,1044325055323426818
-Henrique Meirelles,MDB,Henrique Meirelles|Meirelles,henrique_meirelles.csv,henrique meirelles,0,1044325063485460481
-Guilherme Boulos,PSOL,Guilherme Boulos|Boulos,guilherme_boulos.csv,boulos,0,1044325069382660100
+Henrique Meirelles,MDB,Henrique Meirelles|Meirelles,henrique_meirelles.csv,henrique meirelles,0,1066491922011774976
 Fernando Haddad,PT,Fernando Haddad|Haddad,fernando_haddad.csv,fernando haddad or haddad,0,1044325075552538624
-João Amoedo,NOVO,João Amoedo|Amoedo,joao_amoedo.csv,joão amoedo or amoedo,0,0
