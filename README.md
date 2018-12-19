@@ -10,7 +10,7 @@ Topics:
 
 This project is part of a undergraduate thesis.
 
-Students: Caroline Silva and Guilherme Machado
+Students: Caroline Silva
 
 Mentor: Ulisses Martins
 
@@ -29,7 +29,7 @@ Tópicos:
 
 Este projeto será um resultado de um trabalho de conclusão de curso.
 
-Estudantes: Caroline Silva and Guilherme Machado
+Estudantes: Caroline Silva
 
 Orientador: Ulisses Martins
 
